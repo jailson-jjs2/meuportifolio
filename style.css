@@ -1,5 +1,62 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
+/* Smartphones (600px para baixo) */
+@media only screen and (max-width: 600px) {
+    
+    .header-container{
+        height: 50vh;
+        width: 50vw;
+        background-color: rgb(41, 159, 159);
+        background-image: none !important;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+        box-sizing: border-box;
+        padding: 0 50px;
+        position: left;
+    }
+
+    .social-midia{
+        margin-top: 0rem;
+        display: none;
+        left: 4px !important;
+    }
+
+    .social-midia a{
+        text-decoration: none;
+        color: black;
+        padding: 0.5rem 1rem;
+        border-radius: 100px;
+        border: 2px solid black;
+        min-width: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .5s ease-in-out;
+    }
+
+    .header-container h1, h2 {
+        font-size: 3vw;
+    }
+    
+    .menu-itens ul li a{
+        font-size: 20px !important;
+        letter-spacing: 0;
+        margin-left: 200px !important;
+
+      }
+
+      .alinhaTexto {
+        display: none;
+
+      }
+
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -43,7 +100,8 @@ h2{
     text-decoration: none;
     color: black;
     padding: 1rem 4rem;
-    border: 1px solid black;
+    border-radius: 100px;
+    border: 2px solid black;
     min-width: 4rem;
     display: flex;
     align-items: center;
@@ -52,7 +110,7 @@ h2{
 }
 
 a:hover{
-    background-color: #fff;
+    background-color: rgb(198, 196, 193);
 }
 
 .checkbox-container{
@@ -109,7 +167,7 @@ a:hover{
     height: 4px;
     width: 10px;
     border-radius: 50%;
-    box-shadow: 0px 0px 0px 0px #fff;
+    box-shadow: 0px 0px 0px 0px rgb(198, 196, 193);
     z-index: -1;
     transition: 400ms ease-in-out 0s;
 }
@@ -127,6 +185,7 @@ a:hover{
     opacity: 0;
     visibility: hidden;
     transition: 400ms ease-in-out 0s;
+    background-color: rgb(198, 196, 193);
 }
 
 .menu-itens ul{
@@ -160,11 +219,11 @@ a:hover{
 }
 
 #toggle:checked + .checkbox{
-    background-color: #fff;
+    background-color: rgb(198, 196, 193);
 }
 
 #toggle:checked ~ .menu{
-    box-shadow: 0px 0px 0px 100vmax #fff;
+    box-shadow: 0px 0px 0px 100vmax rgb(198, 196, 193);
     z-index: 1;
 }
 
@@ -198,7 +257,7 @@ a:hover{
     align-items: center;
     justify-content: center;
     background-color: aquamarine;
-    background-image: url('./img/eu.png');
+    background-image: url('./img/dev.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -276,4 +335,9 @@ a:hover{
     align-items: center;
     justify-content: center;
     color: black;
+}
+
+.alinhaTexto{
+    text-align: justify;
+    padding-right: 10px;
 }
